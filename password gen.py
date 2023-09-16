@@ -1,5 +1,4 @@
 #DISCLAIMER: THIS CODE IS UNREADABLE AND IF YOU TRY TO READ IT MIGHT GIVE YOU A MIGRAINE ADVANCE AT YOUR OWN RISK(NO REALLY I'M NOT JOKING)
-from cryptography.fernet import Fernet
 import random, string , pyperclip
 import tkinter as tk
 
@@ -49,10 +48,7 @@ def obliviate():
     labelname = tk.Label(text="Username/E-mail").pack()
     entryname = tk.Entry(width=35)
     entryname.pack()
-    encEntrysite = fernet.encrypt(entrysite)
-    encEntryname = fernet.encrypt(entryname)
-    encEntrypass = fernet.encrypt(entrypass)
-    savebtn = tk.Button(text= "Save" ,command=lambda:save(encEntrysite,encEntryname,encEntrypass))
+    savebtn = tk.Button(text= "Save" ,command=lambda:save(Entrysite,Entryname,Entrypass))
     savebtn.pack(pady = 20) 
     window.mainloop()
 copybtn = tk.Button(text='')
