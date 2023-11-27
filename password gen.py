@@ -2,8 +2,6 @@
 import random, string , pyperclip
 import tkinter as tk
 
-key = Fernet.generate_key()
-fernet = Fernet(key)
 paslist = []
 window = tk.Tk()
 
