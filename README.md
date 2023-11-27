@@ -9,4 +9,4 @@ You must have python3 installed. [Install Python](https://www.python.org/downloa
 If you python3 installed enter the following command in your terminal/command prompt:
 `pip install -r requirements.txt`
 Once done you can enter the following command in the terminal:-
-`python3 "password gen.py"`
+`python3 "main.py"`
